@@ -62,3 +62,34 @@ footer {
     bottom: 0;
     font-size: 14px;
 }
+
+form {
+    background: #fff;
+    border: 2px solid #000;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000;
+}
+
+input[type="submit"] {
+    width: auto;
+    background: #ff4500;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #999;
+}

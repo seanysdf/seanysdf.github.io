@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Blog</h1>
+        <h1>My Awesome Blog</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,23 +18,26 @@
         </nav>
     </header>
     <main>
-        <section id="posts">
-            <article>
-                <h2><a href="posts/post1.html">First Blog Post</a></h2>
-                <p>Summary of the first blog post...</p>
-            </article>
-            <article>
-                <h2><a href="posts/post2.html">Second Blog Post</a></h2>
-                <p>Summary of the second blog post...</p>
-            </article>
-            <article>
-                <h2><a href="posts/post3.html">Third Blog Post</a></h2>
-                <p>Summary of the third blog post...</p>
-            </article>
-        </section>
+        <h2>Contact Me</h2>
+        <p>If you want to send me a message or share an image, please fill out the form below. You can choose to remain anonymous.</p>
+        <form action="https://formspree.io/YOUR_FORM_ENDPOINT" method="POST" enctype="multipart/form-data">
+            <label for="name">Name (optional):</label>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="email">Email (optional):</label>
+            <input type="email" id="email" name="email"><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+            <label for="image">Upload an image:</label>
+            <input type="file" id="image" name="image" accept="image/*"><br><br>
+            
+            <input type="submit" value="Send">
+        </form>
     </main>
     <footer>
-        <p>&copy; 2024 My Blog</p>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
     </footer>
 </body>
 </html>
